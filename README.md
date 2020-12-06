@@ -9,4 +9,4 @@ should show up under to the textbox saying "Enjoy"
 If the number of items is 4, the message should be “Careful”
 If the number of items is 5 or above, the message should be "Too much"
 If the textbox is empty and the user clicks the Check If Too Much button, the message
-Please enter data first should show up.
+"Please enter data first" should show up.
