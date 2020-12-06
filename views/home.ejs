@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is the title</title>
+	<style type="text/css">
+		#noitem {
+			color:red;
+		}
+		#enough {
+			color:green;
+		}
+		#careful {
+			color:orange;
+		}
+		#toomuch {
+			color:blue;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Enter Number of Items</h1>
+	<form action="/" method="POST">
+		<input type="text" name="itemsbox" placeholder="Enter items">
+		<button>Check If Enough...</button>		
+	</form>
+	<%if(items.length==1 && items[0].length==0){%>
+	<h3 id="noitem">Please enter Some Items</h3>
+
+		<% } %>
+		<%if(items.length==1 && items[0].length>0){%>
+	<h3 id="enough">Enjoy...</h3>
+
+		<% } %>
+	<%if(items.length>1 && items.length<=3){%>
+	<h3 id="enough">Enjoy...</h3>
+
+		<% } %>
+		<%if(items.length==4){%>
+	<h3 id="careful">Careful...</h3>
+
+		<% } %>
+	<%if(items.length>=5){%>
+	<h3 id="toomuch">Too much</h3>
+
+		<% } %>
+
+</body>
+</html>
